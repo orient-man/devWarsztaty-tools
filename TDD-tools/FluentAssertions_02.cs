@@ -64,7 +64,9 @@ namespace TDD_tools
         public void matching_types()
         {
             Exception ex = new ApplicationException("fix me");
-            ex.Should().BeAssignableTo<Exception>().Which.Message.Should().Be("fix me");
+            ex.Should()
+                .BeAssignableTo<ApplicationException>()
+                .Which.Message.Should().Be("fix me");
         }
 
         [Test]
