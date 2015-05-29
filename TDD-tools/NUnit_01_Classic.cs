@@ -44,7 +44,7 @@ namespace TDD_tools
             {
                 source.TransferFunds(destination, 300m);
             }
-            catch (InsufficientFundsException expected)
+            catch (InsufficientFundsException)
             {
             }
 
