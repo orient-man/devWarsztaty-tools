@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
+    <Compile Include="NCrunch_Misc.cs" />
     <Compile Include="NUnit_05_Value_Combinatorial.cs" />
     <Compile Include="NUnit_02_Modern.cs" />
     <Compile Include="NUnit_01_Classic.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="NUnit_XX_LifeCycle.cs" />
     <Compile Include="NUnit_XX_SetUpFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequiresCapabilityAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
