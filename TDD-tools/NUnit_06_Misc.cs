@@ -7,6 +7,7 @@ namespace TDD_tools
         [Test, Category("Integration")]
         public void Integration_Test()
         {
+//            System.Threading.Thread.Sleep(5000);
         }
 
         [Test, IntegrationTest]
