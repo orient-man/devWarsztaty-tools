@@ -1,11 +1,12 @@
-using System.Collections;
 using NUnit.Framework;
 
 namespace TDD_tools
 {
-    public class NUnit_04_TestCaseSource
+    public class NUnit_04_TestCase
     {
-        [TestCaseSource("TestCases")]
+        [TestCase(200, 150, 100)]
+        [TestCase(300, 50, 70)]
+        [TestCase(200, 150, 300, ExpectedException = typeof(InsufficientFundsException))]
         public void TransferFunds(decimal srcBalance, decimal destBalance, decimal transfer)
         {
             // arrange
@@ -21,19 +22,6 @@ namespace TDD_tools
             // assert
             Assert.That(destination.Balance, Is.EqualTo(destBalance + transfer));
             Assert.That(source.Balance, Is.EqualTo(srcBalance - transfer));
-        }
-
-        public static IEnumerable TestCases
-        {
-            get
-            {
-                yield return new TestCaseData(200m, 150m, 100m);
-                yield return new TestCaseData(300m, 50m, 70m);
-                yield return new TestCaseData(200m, 150m, 300m)
-                    .Throws(typeof(InsufficientFundsException))
-                    .SetName("InsufficientFunds")
-                    .SetDescription("An exception is expected");
-            }
         }
     }
 }

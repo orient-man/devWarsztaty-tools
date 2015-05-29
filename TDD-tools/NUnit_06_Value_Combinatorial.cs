@@ -2,7 +2,7 @@ using NUnit.Framework;
 
 namespace TDD_tools
 {
-    public class NUnit_05_Value_Combinatorial
+    public class NUnit_06_Value_Combinatorial
     {
         [Test, Combinatorial]
         public void TransferFunds(

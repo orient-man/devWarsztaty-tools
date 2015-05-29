@@ -4,7 +4,7 @@ using NUnit.Framework;
 
 namespace TDD_tools
 {
-    public class FluentAssertions_01
+    public class NUnit_03_FluentAssertions
 
     {
         private Account source;
@@ -28,8 +28,8 @@ namespace TDD_tools
 
             // assert
             destination.Balance.Should().Be(250m);
-            source.Balance.Should().Be(100m);
             source.History.Should().BeEquivalentTo(new[] { 200, -100m });
+            source.Balance.Should().Be(100m);
             source.History.Should().BeEquivalentTo(new[] { 200, -100m });
             destination.History.Should().BeEquivalentTo(new[] { 150, 100m });
         }

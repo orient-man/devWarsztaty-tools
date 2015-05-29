@@ -58,20 +58,21 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="AccountWriter.cs" />
-    <Compile Include="FluentAssertions_01.cs" />
-    <Compile Include="FluentAssertions_02.cs" />
+    <Compile Include="NUnit_03_FluentAssertions.cs" />
+    <Compile Include="FluentAssertions_More.cs" />
     <Compile Include="IAccountData.cs" />
     <Compile Include="IFileWriter.cs" />
     <Compile Include="Moq_01_Basics.cs" />
     <Compile Include="Moq_02_Advanced.cs" />
     <Compile Include="NCrunch_Misc.cs" />
-    <Compile Include="NUnit_05_Value_Combinatorial.cs" />
+    <Compile Include="NUnit_06_Value_Combinatorial.cs" />
     <Compile Include="NUnit_02_Modern.cs" />
     <Compile Include="NUnit_01_Classic.cs" />
-    <Compile Include="NUnit_03_TestCase.cs" />
+    <Compile Include="NUnit_04_TestCase.cs" />
     <Compile Include="InsufficientFundsException.cs" />
-    <Compile Include="NUnit_04_TestCaseSource.cs" />
+    <Compile Include="NUnit_05_TestCaseSource.cs" />
     <Compile Include="NUnit_06_Misc.cs" />
+    <Compile Include="NUnit_07_Misc.cs" />
     <Compile Include="NUnit_XX_LifeCycle.cs" />
     <Compile Include="NUnit_XX_SetUpFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

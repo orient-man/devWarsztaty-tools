@@ -7,7 +7,7 @@ using NUnit.Framework;
 
 namespace TDD_tools
 {
-    public class FluentAssertions_02
+    public class FluentAssertions_More
     {
         [Test]
         public void strings()
