@@ -62,7 +62,8 @@
     <Compile Include="FluentAssertions_02.cs" />
     <Compile Include="IAccountData.cs" />
     <Compile Include="IFileWriter.cs" />
-    <Compile Include="Moq_01.cs" />
+    <Compile Include="Moq_01_Basics.cs" />
+    <Compile Include="Moq_02_Advanced.cs" />
     <Compile Include="NCrunch_Misc.cs" />
     <Compile Include="NUnit_05_Value_Combinatorial.cs" />
     <Compile Include="NUnit_02_Modern.cs" />

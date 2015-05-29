@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Text;
-using System.Web;
 using Moq;
 using NUnit.Framework;
 
 namespace TDD_tools
 {
-    public class Moq_01
+    public class Moq_01_Basics
     {
         private readonly Account account;
 
-        public Moq_01()
+        public Moq_01_Basics()
         {
             account = new Account();
             account.Deposit(200);
@@ -76,24 +74,6 @@ namespace TDD_tools
             // assert
             mockFileWriter.Verify(fw => fw.WriteLine("Current balance: 170"), Times.Once());
             mockFileWriter.Verify(fw => fw.WriteLine("History: 200, -70, 50, -10"), Times.Once());
-        }
-
-        [Test]
-        public void classes_with_virtual_members()
-        {
-            // arrange
-            var context = Mock.Of<HttpContextBase>(
-                ctx =>
-                    ctx.User.Identity.Name == "kzu" &&
-                    ctx.Request.IsAuthenticated == true &&
-                    ctx.Request.Url == new Uri("http://moqthis.com") &&
-                    ctx.Response.ContentType == "application/xml");
-
-
-            // act  assert
-            Assert.That(context.User.Identity.Name, Is.EqualTo("kzu"));
-            Assert.That(context.Request.IsAuthenticated, Is.True);
-            // ...
         }
     }
 }
