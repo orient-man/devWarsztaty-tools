@@ -26,6 +26,8 @@ namespace TDD_tools
             // assert
             Assert.That(destination.Balance, Is.EqualTo(250m));
             Assert.That(source.Balance, Is.EqualTo(100m));
+            Assert.That(source.History, Is.EquivalentTo(new [] { 200, -100m }));
+            Assert.That(destination.History, Is.EquivalentTo(new [] { 150, 100m }));
         }
 
         [Test]

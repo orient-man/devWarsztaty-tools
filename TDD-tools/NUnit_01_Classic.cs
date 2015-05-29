@@ -27,6 +27,8 @@ namespace TDD_tools
             // assert
             Assert.AreEqual(250m, destination.Balance);
             Assert.AreEqual(100m, source.Balance);
+            CollectionAssert.AreEquivalent(source.History, new [] { 200, -100m });
+            CollectionAssert.AreEquivalent(destination.History, new [] { 150, 100m });
         }
 
         [Test]
